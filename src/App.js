@@ -15,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     // Fetch data from Express server
-    fetch('http://localhost:8081/api/data')
+    fetch('http://localhost:8081/api/account-data')
         .then(response => response.json())
         .then(data => setData(data))
         .catch(err => console.error("Error fetching data", err));
