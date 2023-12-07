@@ -4,12 +4,32 @@ import { useNavigate, Link } from "react-router-dom";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+ // const [loginError, setLoginError] = useState(false);
+  
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     //make a condition for success and failure of login.
-    navigate("/main");
+    if(username == "admin" && password == "root") {
+      console.log("admin logged in");
+      navigate("/admin"); 
+    }
+    else if (username =="author" && password == "123") {
+      console.log("author logged in");
+      navigate("/author"); 
+    }
+    else if (username =="CPC" && password == "123") {
+      console.log("CPC logged in");
+      navigate("/cpc"); 
+    }
+    else if (username =="reviewer" && password == "123") {
+      console.log("reviewer logged in")
+      navigate("/review")
+    }
+    else {
+      alert ("Invalid credentials. try again.")
+      navigate("/login")
+    }
   };
   return (
     <div className="login-container">

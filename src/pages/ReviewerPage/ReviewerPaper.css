@@ -1,0 +1,61 @@
+/* General styling for the container */
+div {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styling for the select dropdown */
+select {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Headline styling */
+h1 {
+    color: #333;
+    text-align: center;
+}
